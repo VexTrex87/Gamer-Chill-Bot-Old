@@ -1,0 +1,28 @@
+{
+    "new_set": {
+      "prefix": "new_set",
+      "body": [
+        "import discord",
+        "from discord.ext import commands",
+        "",
+        "class ${1}(commands.Cog):",
+        "    def __init__(self, client):",
+        "        self.client = client",
+        "",
+        "    $0",
+        "",
+        "def setup(client):",
+        "    client.add_cog(${1}(client))"
+      ],
+      "description": "new_set"
+    },
+    "new_command": {
+      "prefix": "new_command",
+      "body": [
+        "@commands.command()",
+        "async def ${1}(self, context):",
+        "    ${0} "
+      ],
+      "description": "new_command"
+    },
+}
